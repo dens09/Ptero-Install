@@ -60,6 +60,14 @@ Custom builds (Panel + Wings) from [dens09/Ptero-Install releases](https://githu
 bash <(curl -s https://raw.githubusercontent.com/dens09/Ptero-Install/main/install.sh)
 ```
 
+**Enigma theme** (after panel is installed):
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/dens09/Ptero-Install/main/install-theme.sh)
+```
+
+Or menu option **3** in the main installer.
+
 Upstream one-liner (official Pterodactyl builds):
 
 ```bash

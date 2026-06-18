@@ -39,6 +39,9 @@ export WINGS_RELEASE_TAG="${WINGS_RELEASE_TAG:-v1.11.11}"
 export PANEL_DL_URL="${PANEL_DL_URL:-https://github.com/dens09/Ptero-Install/releases/download/${PANEL_RELEASE_TAG}/panel.tar.gz}"
 export WINGS_DL_BASE_URL="${WINGS_DL_BASE_URL:-https://github.com/dens09/Ptero-Install/releases/download/${WINGS_RELEASE_TAG}/wings_linux_}"
 export USE_CUSTOM_BUILDS="${USE_CUSTOM_BUILDS:-true}"
+export PANEL_PATH="${PANEL_PATH:-/var/www/pterodactyl}"
+export THEME_DL_URL="${THEME_DL_URL:-https://github.com/dens09/Ptero-Install/releases/download/enigma/THEME.zip}"
+export THEME_NODE_MAJOR="${THEME_NODE_MAJOR:-16}"
 
 # Локальный запуск: ./install.sh
 # shellcheck source=custom-config.sh
@@ -90,11 +93,11 @@ while [ "$done" == false ]; do
     "Install the panel"
     "Install Wings"
     "Install both [0] and [1] on the same machine (wings script runs after panel)"
-    # "Uninstall panel or wings\n"
+    "Install Enigma theme for panel (panel must already be installed)"
 
     "Install panel with canary version of the script (the versions that lives in master, may be broken!)"
     "Install Wings with canary version of the script (the versions that lives in master, may be broken!)"
-    "Install both [3] and [4] on the same machine (wings script runs after panel)"
+    "Install both [4] and [5] on the same machine (wings script runs after panel)"
     "Uninstall panel or wings with canary version of the script (the versions that lives in master, may be broken!)"
   )
 
@@ -102,7 +105,7 @@ while [ "$done" == false ]; do
     "panel"
     "wings"
     "panel;wings"
-    # "uninstall"
+    "theme"
 
     "panel_canary"
     "wings_canary"
